@@ -1,6 +1,13 @@
 /* 폰트 */
 /* 폰트-나눔고딕 */
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*폰트-카페24 아네모네*/
+@font-face {
+  font-family: 'Cafe24Ohsquare';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /* 폰트-둘기마요 */
 @font-face {
   font-family: 'Dovemayo-Bold';
@@ -8,25 +15,12 @@
   font-weight: normal;
   font-style: normal;
 }
-/* 폰트-스텐실 */
-@font-face {
-  font-family: 'stencil';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/stencil.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-/* 폰트-어비푸딩체 */
-@font-face {
-  font-family: 'UhBeepuding';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeepuding.woff') format('woff');
-  font-weight: normal; font-style: normal;
-}
 
 /* 키프레임 */
 /* 프로필 무빙 키프레임 */
 @keyframes profMov {
   0% { left: 0px; }
-  50% { left: -465px; }
+  50% { left: -350px; }
   100% { left: 0px; }
 }
 
@@ -46,84 +40,23 @@
   80% { transform: rotate(288deg); }
   100% { transform: rotate(360deg); }
 }
-
-/* 배경 비 이동 */
-@keyframes rainMov {
-  0% {background-position: 0px 0px;}
-  100% {background-position: 5000px 11000px;}
-}
-
-/* 마우스 커서 */
-
-/* 커서-기본 */
-html,
-body,
-.fr-popup.emoticons,
-.fr-desktop,
-.fr-active,
-.fr-tooltip,
-.fr-sticky-off,
-select.form-control,
-input[type=checkbox],
-input[type=radio],
-.opt  {
-  cursor: url(https://cdn.discordapp.com/attachments/391626822779011076/661965379005972511/3380e05d1af8cb52.png),auto !important;
-}
-
-/* 커서-링크 */
-#right-search-form>#right-search-btn,
-#board-info #board-info-bottom #addFavoriteBtn,
-#article-list #article-option-area>#article-option-area-toggle-btn,
-#article-list>.article-list-row>.item>.list-title>.list-writer>span,
-#aw0,
-.reply > .reply-header > .reply-writer.logged,
-.reply-menu,
-.btn,
-.fr-toolbar .fr-command.fr-btn,
-.fr-popup .fr-command.fr-btn,
-.fr-view img.fr-dib.fr-fil,
-.fr-popup .fr-emoticon,
-.fr-popup .fr-color-set>span,
-.fr-popup .fr-colors-tabs .fr-colors-tab,
-.fr-popup .fr-color-hex-layer .fr-action-buttons button,
-.fr-popup .fr-checkbox input,
-.fr-popup .fr-action-buttons button.fr-command,
-.fr-popup .fr-checkbox-line label,
-.fr-popup .fr-image-upload-layer .fr-form,
-.pull-left,
-a {
-  cursor: url(https://cdn.discordapp.com/attachments/391626822779011076/661965431078125578/45a4969aedda6f9d.png), auto !important;
-}
-
-/* 커서-텍스트 */
-span#viewers,
-#article-list #boardSearchForm .form-control,
-.fr-element.fr-view,
-.fr-box.fr-basic.fr-element,
-textarea.fr-code,
-input[type='text'] {
-  cursor: url(https://cdn.discordapp.com/attachments/391626822779011076/661965442604335154/27abea04602a31d2.png), auto !important;
-}
-
 /* 배경 색상 */
 html {
-  background: -webkit-linear-gradient(282deg, #000000 6%,#162338 26%,#6f26a2 39%,#ef5fcd 58%,#ffabb1 90%);
+  background: -webkit-linear-gradient(270deg, #ffe0f1 6%,#ffb8e1 26%,#ffca6e 58%,#b59e81 90%);
   height: auto !important;
 }
 
-/* 바디 기본세팅 – 폰트, 비 무빙 */
+/* 바디 기본세팅 – 폰트 */
 body {
   letter-spacing: -0.05em !important;
   background: transparent;
   font-family: 'Nanum Gothic', sans-serif;
-  background-image: url(https://cdn.discordapp.com/attachments/391626822779011076/565159811457613824/rain-re3.png);
-  animation: rainMov 25s linear infinite;
 }
 
 /*오른쪽하단 캐릭터(창 해상도 의존 사이즈 변경)*/
 body:after {
   content: "";
-  background-image: url(https://cdn.discordapp.com/attachments/391626822779011076/653524511160926208/1_1.png);
+  background-image: url(https://cdn.discordapp.com/attachments/391626822779011076/732253676265144350/78d1bf32-1bc1-4d47-bf4e-5bded8e504bb-profile_image-300x300.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -193,7 +126,7 @@ header .row>div:nth-child(1)>a {
   display: block;
   width: 157px;
   height: 50px;
-  background: url(https://cdn.discordapp.com/attachments/391626822779011076/648126686902091807/Untitled-1.png) no-repeat;
+  background: url(https://cdn.discordapp.com/attachments/391626822779011076/732245796606443644/9ea1581d1b217906.png) no-repeat;
   background-size: auto 50px;
 }
 
@@ -210,7 +143,7 @@ header #right-search-form>input[type='text'] {
   border: 1px dashed #c5c6f9;
   box-shadow:
    0 0 0 3px #fff,
-   0 0 0 5px #F09290,
+   0 0 0 5px #b58350,
    0 0 0 8px #fff,
    0 0 2px 8px #c5c6f9;
   transition: 0.2s;
@@ -218,12 +151,12 @@ header #right-search-form>input[type='text'] {
 /* 헤더 검색 버튼 */
 header #right-search-form>#right-search-btn {
   margin-top: 3px;
-  color: #F09290;
+  color: #b58350;
   background: white;
   border: 1px dashed #ddd;
   box-shadow:
    0 0 0 3px #fff,
-   0 0 0 5px #F09290,
+   0 0 0 5px #b58350,
    0 0 0 8px #fff,
    0 0 2px 8px #999;
   border-radius: 15px;
@@ -232,14 +165,14 @@ header #right-search-form>#right-search-btn {
 /* 헤더 NAV bar */
 header #header-bar>.row {
   border-radius: 10px;
-  border-top: 4px solid #F09290;
+  border-top: 4px solid #b58350;
   border-right: none;
   border-bottom: none;
   box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 header #header-bar #header-top-notice strong.notice-badge {
-  background: #F09290;
+  background: #b58350;
 }
 
 /* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
@@ -250,7 +183,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #main .menu-wrapper>.header {
-  background: #F09290;
+  background: #b58350;
   border-radius:10px 10px 0 0;
 }
 
@@ -298,30 +231,27 @@ header #header-bar #header-top-notice strong.notice-badge {
   position: relative;
 }
 #board-info #board-info-profile-img:hover{
-  border: 2px solid #F09290;
+  border: 2px solid #b58350;
   border-radius: 10px;
 }
 
 
 /*차우수 스텐실폰트*/
 #board-info h1>a {
-  font-family: stencil;
+  font-family: Cafe24Ohsquare;
 }
 /* 접속자 수 글씨 색 */
 #board-info #viewers-area {
-  color: #F09290;
+  color: #b58350;
 }
-/*우산티콘*/
-#board-info #viewers-area .fa-user:before{
-  content: url(https://static-cdn.jtvnw.net/badges/v1/f00f1286-5693-4137-99f3-99f07c6e503e/1)
-}
+
 /* 숫자 앞 뒤에 들어갈 문구 */
 #board-info #viewers-area #viewers:before {
-  content: " 레인이 ";
+  content: " 율무단 ";
   cursor: text;
 }
 #board-info #viewers-area #viewers:after {
-  content: "명 우산 속에서 뛰노는 중";
+  content: "명이 트게더에 있어요~";
   cursor: text;
 }
 
@@ -330,7 +260,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #board-info #board-info-bottom a {
-  color: #F09290;
+  color: #b58350;
 }
 
 /*글목록*/
@@ -347,8 +277,8 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /*카테고리*/
 #article-list #article-list-category {
-  border-top: 2px solid #F09290;
-  background: -webkit-linear-gradient(110deg, #f09290 0%,#ffe1ec 11%,#ffffff 20%,#ffffff 40%,#ffffff 85%,#f19a998a 94%,#ffffff 100%);
+  border-top: 2px solid #b58350;
+  background: -webkit-linear-gradient(110deg, #b58350 0%,#f5ca9f 11%,#ffffff 20%,#ffffff 40%,#ffffff 85%,#b583508a 94%,#ffffff 100%);
   border-radius: 15px
 }
 #article-list #article-list-category>a {
@@ -365,12 +295,12 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 /*공지부분*/
 #article-list>.article-list-row.notice {
-  background: -webkit-linear-gradient(110deg, #f09290 0%,#ffe1ec 11%,#ffffff 20%,#ffffff 40%,#ffffff 85%,#f19a998a 94%,#ffffff 100%);
+  background: -webkit-linear-gradient(110deg, #b58350 0%,#f5ca9f 11%,#ffffff 20%,#ffffff 40%,#ffffff 85%,#b583508a 94%,#ffffff 100%);
   border-radius: 12px;
 }
 /*인기글*/
 #article-list>.article-list-row.hot {
-  background: -webkit-linear-gradient(110deg, #f09290 0%,#ffe1ec 11%,#ffffff 20%,#ffffff 40%,#ffffff 85%,#f19a998a 94%,#ffffff 100%);
+  background: -webkit-linear-gradient(110deg, #b58350 0%,#f5ca9f 11%,#ffffff 20%,#ffffff 40%,#ffffff 85%,#b583508a 94%,#ffffff 100%);
   border-radius: 12px;
 }
 
@@ -388,7 +318,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 /*헤더(추천수)*/
 #article-list>.article-list-row>.item>.list-header>span {
-  background-color: #F09290;
+  background-color: #b58350;
 }
 /*카테고리*/
 #article-list>.article-list-row>.item>.list-title>.list-category>span {
@@ -414,7 +344,7 @@ small.favo i.fa.fa-heart:before {
 
 /*댓글 수*/
 #article-list>.article-list-row>.item>.list-title>small.comment-count {
-  color: #F09290;
+  color: #b58350;
 }
 
 /*작성자*/
@@ -422,14 +352,8 @@ small.favo i.fa.fa-heart:before {
   width: 120px !important;
 }
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
-  color: #F09290;
+  color: #b58350;
 }
-
-/*브로드캐스터 배지*/
-img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
-    content: url(https://cdn.discordapp.com/attachments/391626822779011076/649216043176165376/unknown.png);
-}
-
 
 /*게시글호버*/
 #article-list .article-list-row:hover,
@@ -457,14 +381,14 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
   font-weight: bold;
 }
 #article-info>h2>span.category {
-  color: #F09290 !important;
+  color: #b58350 !important;
 }
 div#article-content-wrapper {
   border-radius: 0px 0px 10px 10px;
   margin-bottom: 10px;
 }
 #article-content-wrapper>.header {
-  border-top: 2px solid #F09290;
+  border-top: 2px solid #b58350;
 }
 
 /*추천비추천*/
@@ -564,10 +488,10 @@ div#article-content-wrapper {
   border-radius: 10px 10px 0px 0px;
 }
 #article-reply-area>.header h5 {
-  color: #F09290;
+  color: #b58350;
 }
 #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
-  color: #F09290;
+  color: #b58350;
 }
 .row.mt-2 {
   border-radius: 10px 10px 0px 0px;
@@ -591,7 +515,7 @@ div#article-content-wrapper {
   padding-bottom: 10px;
 }
 h3 {
-  background: #F09290;
+  background: #b58350;
   margin-right: -15px;
   margin-left: -15px;
   margin-bottom: 10px;
@@ -602,10 +526,10 @@ h3 {
   color: #ffffff;
 }
 a {
-  color: #F09290;
+  color: #b58350;
 }
 span.a-badge i.fa.fa-info-circle {
-  color: #F09290;
+  color: #b58350;
 }
 
 /*게시글 페이지 끝*/
@@ -634,7 +558,7 @@ span.a-badge i.fa.fa-info-circle {
 /*페이지 목록*/
 .pagination>li>a,
 .pagination>li>span {
-  color: #F09290;
+  color: #b58350;
   border-radius: 20px;
 }
 
@@ -644,15 +568,15 @@ span.a-badge i.fa.fa-info-circle {
 .pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
-  background-color: #F09290;
-  border-color: #F09290;
+  background-color: #b58350;
+  border-color: #b58350;
 }
 
 .pagination>li>a:focus,
 .pagination>li>a:hover,
 .pagination>li>span:focus,
 .pagination>li>span:hover {
-  color: #F09290;
+  color: #b58350;
 }
 
 .pagination>li:first-child>a, .pagination>li:first-child>span {
@@ -681,18 +605,4 @@ footer span {
 }
 footer span a {
   color: azure;
-}
-
-/*읽어주세요*/
-/*div#article-list-row-33256920 .list-title{
-  background: url(https://cdn.discordapp.com/attachments/391626822779011076/564131859630391306/Untitled-1.png) no-repeat !important;
-  background-size: 650px 30px !important;
-  background-position: -70px !important;
-}*/
-
-/*휴방공지용*/
-div#article-list-row-33847142 .list-title{
-  background: url(https://cdn.discordapp.com/attachments/391626822779011076/616682365208625171/Untitled-1.png) no-repeat !important;
-  background-size: 650px 30px !important;
-  background-position: -70px !important;
 }
