@@ -487,7 +487,7 @@ div#article-content-wrapper {
 #article-reply-area {
   padding-bottom: 10px;
   margin-top: 10px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 10px 10px;
 }
 #article-reply-area>.header h5 {
   color: #b58350;
@@ -513,7 +513,8 @@ div#article-content-wrapper {
   border-radius: 0px 0px 10px 10px;
 }
 #article-neighbor-list {
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 h3 {
