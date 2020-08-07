@@ -9,7 +9,13 @@
   font-weight: normal;
   font-style: normal;
 }
-
+/*폰트-넥슨 베찌체*/
+@font-face {
+  font-family: 'Bazzi';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /* 폰트-둘기마요 */
 @font-face {
   font-family: 'Dovemayo-Bold';
@@ -240,7 +246,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /*차우수 스텐실폰트*/
 #board-info h1>a {
-  font-family: Cafe24Ohsquare;
+  font-family: Bazzi;
 }
 /* 접속자 수 글씨 색 */
 #board-info #viewers-area {
